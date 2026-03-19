@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+</head>
+<body>
+    <h1>Bem-vindo aos seus Serviços</h1>
+    <hr>
+
+    <p><a href="/">Voltar para a página inicial</a></p>
+
+    <table border="1">
+        <tr>
+            <th>Serviços</th>
+            <th>Descrição</th>
+            <th>Preços</th>
+        </tr>
+
+        <% servicos.forEach(function(servico) { %>
+            <tr>
+                <td><%= servico.servicos %></td>
+                <td><%= servico.descricao %></td>
+                <td><%= servico.preco %></td>
+            </tr>
+        <% }) %>
+    </table>
+</body>
+</html>
