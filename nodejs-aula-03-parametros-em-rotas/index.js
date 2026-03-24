@@ -50,7 +50,7 @@ app.get("/produtos", function (req, res) {
 app.get("/produtos/:produto", function (req, res) {
   const produto = req.params.produto;
 
-  res.render("detalhesProduto", { // ⚠️ SEM "S"
+  res.render("detalhesProduto", { //SEM "S"
     produto: produto
   });
 });
